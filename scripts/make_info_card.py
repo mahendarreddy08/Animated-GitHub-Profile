@@ -22,8 +22,6 @@ SEPARATOR_COLOR = "#21262d"
 
 # User info - customize these!
 USERNAME = "mahendarreddy08"
-ROLE = "Full-Stack Developer"
-LOCATION = "India"
 STACK = "Python · JavaScript · React · Node.js · SQL"
 HIGHLIGHTS = [
     "Open-source contributor",

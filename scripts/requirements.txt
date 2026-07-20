@@ -1,7 +1,7 @@
-requests==2.32.3
-beautifulsoup4==4.12.3
+requests>=2.32.3
+beautifulsoup4>=4.12.3
 # portrait-only (not needed by the daily workflow):
-pillow
-numpy
-opencv-python
-rembg
+pillow>=10.0.0
+numpy>=1.24.0
+opencv-python>=4.8.0
+rembg>=2.0.0

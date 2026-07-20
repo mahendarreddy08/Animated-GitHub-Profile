@@ -438,7 +438,7 @@
   <rect x="315" y="34" width="12" height="12" rx="2" fill="#161b22" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.15s" begin="0.460s" fill="freeze"/>
   </rect>
-  <rect x="315" y="48" width="12" height="12" rx="2" fill="#26a641" opacity="0">
+  <rect x="315" y="48" width="12" height="12" rx="2" fill="#006d32" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.15s" begin="0.468s" fill="freeze"/>
   </rect>
   <rect x="315" y="62" width="12" height="12" rx="2" fill="#161b22" opacity="0">
@@ -762,7 +762,7 @@
   <rect x="525" y="76" width="12" height="12" rx="2" fill="#161b22" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.15s" begin="0.604s" fill="freeze"/>
   </rect>
-  <rect x="525" y="90" width="12" height="12" rx="2" fill="#006d32" opacity="0">
+  <rect x="525" y="90" width="12" height="12" rx="2" fill="#0e4429" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.15s" begin="0.612s" fill="freeze"/>
   </rect>
   <rect x="525" y="104" width="12" height="12" rx="2" fill="#161b22" opacity="0">
@@ -810,7 +810,7 @@
   <rect x="553" y="104" width="12" height="12" rx="2" fill="#161b22" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.15s" begin="0.636s" fill="freeze"/>
   </rect>
-  <rect x="553" y="118" width="12" height="12" rx="2" fill="#26a641" opacity="0">
+  <rect x="553" y="118" width="12" height="12" rx="2" fill="#006d32" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.15s" begin="0.644s" fill="freeze"/>
   </rect>
   <rect x="567" y="34" width="12" height="12" rx="2" fill="#161b22" opacity="0">
@@ -837,7 +837,7 @@
   <rect x="581" y="34" width="12" height="12" rx="2" fill="#161b22" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.15s" begin="0.612s" fill="freeze"/>
   </rect>
-  <rect x="581" y="48" width="12" height="12" rx="2" fill="#26a641" opacity="0">
+  <rect x="581" y="48" width="12" height="12" rx="2" fill="#006d32" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.15s" begin="0.620s" fill="freeze"/>
   </rect>
   <rect x="581" y="62" width="12" height="12" rx="2" fill="#161b22" opacity="0">
@@ -1008,7 +1008,7 @@
   <rect x="693" y="48" width="12" height="12" rx="2" fill="#161b22" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.15s" begin="0.684s" fill="freeze"/>
   </rect>
-  <rect x="693" y="62" width="12" height="12" rx="2" fill="#26a641" opacity="0">
+  <rect x="693" y="62" width="12" height="12" rx="2" fill="#006d32" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.15s" begin="0.692s" fill="freeze"/>
   </rect>
   <rect x="693" y="76" width="12" height="12" rx="2" fill="#161b22" opacity="0">
@@ -1041,7 +1041,7 @@
   <rect x="707" y="104" width="12" height="12" rx="2" fill="#161b22" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.15s" begin="0.724s" fill="freeze"/>
   </rect>
-  <rect x="707" y="118" width="12" height="12" rx="2" fill="#26a641" opacity="0">
+  <rect x="707" y="118" width="12" height="12" rx="2" fill="#006d32" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.15s" begin="0.732s" fill="freeze"/>
   </rect>
   <rect x="721" y="34" width="12" height="12" rx="2" fill="#161b22" opacity="0">
@@ -1101,7 +1101,7 @@
   <rect x="749" y="90" width="12" height="12" rx="2" fill="#161b22" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.15s" begin="0.740s" fill="freeze"/>
   </rect>
-  <rect x="749" y="104" width="12" height="12" rx="2" fill="#39d353" opacity="0">
+  <rect x="749" y="104" width="12" height="12" rx="2" fill="#006d32" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.15s" begin="0.748s" fill="freeze"/>
   </rect>
   <rect x="749" y="118" width="12" height="12" rx="2" fill="#161b22" opacity="0">
@@ -1138,7 +1138,7 @@
   <text x="171" y="245" font-family="monospace" font-size="10" fill="#8b949e">More</text>
   <text x="35" y="270" font-family="monospace" font-size="11" fill="#c9d1d9" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.04s" fill="freeze"/>
-    ~17 contributions in the last year  ·  1-day streak  ·  Best: 3 on 2026-07-10
+    ~20 contributions in the last year  ·  1-day streak  ·  Best: 6 on 2026-07-20
   </text>
   <text x="35" y="288" font-family="monospace" font-size="9" fill="#8b949e" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.34s" fill="freeze"/>

@@ -18,7 +18,7 @@
 <h3><code>mahendarreddy08@github ~ $ ./status.sh</code></h3>
 
 ```
-📊 17 contributions in the last year
+📊 20 contributions in the last year
 🔧 Full-Stack Developer | Python · JavaScript · React · Node.js · SQL
 🌱 Currently building cool stuff with Python & JS
 ⚡ Always learning, always coding

@@ -5,8 +5,13 @@ Reads data/source-prepped.png, writes avi-ascii.svg.
 """
 
 import os
-import math
 from PIL import Image
+
+# Use Resampling.LANCZOS for newer Pillow compatibility
+try:
+    RESAMPLE_MODE = Image.Resampling.LANCZOS
+except AttributeError:
+    RESAMPLE_MODE = Image.LANCZOS
 
 # ASCII density ramp: bright (sparse) -> dark (dense)
 # Leading space clears background to nothing
@@ -28,13 +33,20 @@ ROW_DELAY = 0.04   # delay between rows starting
 CHAR_DELAY = 0.003 # delay per character within a row
 
 
+def get_pixels(img):
+    """Get pixel data compatible with Pillow 10+."""
+    if hasattr(img, 'get_flattened_data'):
+        return list(img.get_flattened_data())
+    return list(img.getdata())
+
+
 def image_to_ascii_grid(image_path, cols=COLS, rows=ROWS):
     """Convert image to 2D list of ASCII characters."""
     img = Image.open(image_path).convert("L")
     
     # Resize to character grid
-    img_resized = img.resize((cols, rows), Image.LANCZOS)
-    pixels = list(img_resized.getdata())
+    img_resized = img.resize((cols, rows), RESAMPLE_MODE)
+    pixels = get_pixels(img_resized)
     
     # Map brightness to ASCII ramp
     # 0 (black) -> dense chars, 255 (white) -> sparse chars
@@ -86,7 +98,6 @@ def generate_svg(grid, output_path="avi-ascii.svg"):
                      f'fill="{FILL_COLOR}" clip-path="url(#{clip_id})">{row_text}</text>')
         
         # Cursor effect - small block that follows the reveal
-        cursor_id = f"cursor-{y}"
         lines.append(f'  <rect x="10" y="{row_y - CHAR_H + 2}" width="{CHAR_W}" height="{CHAR_H}" '
                      f'fill="{FILL_COLOR}" opacity="0">')
         lines.append(f'    <animate attributeName="opacity" values="0;1;0" '

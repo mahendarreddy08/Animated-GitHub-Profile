@@ -13,13 +13,22 @@ from PIL import Image, ImageFilter
 import numpy as np
 import cv2
 
+# Use Resampling.LANCZOS for newer Pillow compatibility
+try:
+    RESAMPLE_MODE = Image.Resampling.LANCZOS
+except AttributeError:
+    RESAMPLE_MODE = Image.LANCZOS
+
+
 def prep_photo(input_path, output_path="data/source-prepped.png"):
     """Remove background, boost contrast, composite on white."""
     
     print(f"Processing {input_path}...")
     
     # Ensure output dir exists
-    os.makedirs(os.path.dirname(output_path) if os.path.dirname(output_path) else ".", exist_ok=True)
+    out_dir = os.path.dirname(output_path)
+    if out_dir:
+        os.makedirs(out_dir, exist_ok=True)
     
     # Load image
     img = Image.open(input_path).convert("RGB")
