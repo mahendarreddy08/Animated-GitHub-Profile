@@ -8,7 +8,7 @@ Writes data/contributions.json
 import sys
 import os
 import json
-from datetime import datetime, timedelta, date
+from datetime import datetime, timezone, timedelta, date
 import requests
 from bs4 import BeautifulSoup
 
@@ -127,7 +127,7 @@ def compute_stats(contributions):
         "longest_streak": longest_streak,
         "best_day": best_day,
         "monthly_totals": dict(sorted(monthly.items())),
-        "updated_at": datetime.utcnow().isoformat()
+        "updated_at": datetime.now(timezone.utc).isoformat()
     }
     
     return stats

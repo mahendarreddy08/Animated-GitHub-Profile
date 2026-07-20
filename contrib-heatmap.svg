@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="860" height="280" viewBox="0 0 860 280">
   <rect width="100%" height="100%" fill="#0d1117" rx="8"/>
-  <text x="371" y="15" font-family="monospace" font-size="10" fill="#8b949e">Jan</text>
-  <text x="441" y="15" font-family="monospace" font-size="10" fill="#8b949e">Feb</text>
-  <text x="497" y="15" font-family="monospace" font-size="10" fill="#8b949e">Mar</text>
-  <text x="553" y="15" font-family="monospace" font-size="10" fill="#8b949e">Apr</text>
-  <text x="609" y="15" font-family="monospace" font-size="10" fill="#8b949e">May</text>
-  <text x="679" y="15" font-family="monospace" font-size="10" fill="#8b949e">Jun</text>
   <text x="35" y="15" font-family="monospace" font-size="10" fill="#8b949e">Jul</text>
   <text x="63" y="15" font-family="monospace" font-size="10" fill="#8b949e">Aug</text>
   <text x="133" y="15" font-family="monospace" font-size="10" fill="#8b949e">Sep</text>
   <text x="189" y="15" font-family="monospace" font-size="10" fill="#8b949e">Oct</text>
   <text x="245" y="15" font-family="monospace" font-size="10" fill="#8b949e">Nov</text>
   <text x="315" y="15" font-family="monospace" font-size="10" fill="#8b949e">Dec</text>
+  <text x="371" y="15" font-family="monospace" font-size="10" fill="#8b949e">Jan</text>
+  <text x="441" y="15" font-family="monospace" font-size="10" fill="#8b949e">Feb</text>
+  <text x="497" y="15" font-family="monospace" font-size="10" fill="#8b949e">Mar</text>
+  <text x="553" y="15" font-family="monospace" font-size="10" fill="#8b949e">Apr</text>
+  <text x="609" y="15" font-family="monospace" font-size="10" fill="#8b949e">May</text>
+  <text x="679" y="15" font-family="monospace" font-size="10" fill="#8b949e">Jun</text>
   <text x="30" y="58.0" font-family="monospace" font-size="9" fill="#8b949e" text-anchor="end">Mon</text>
   <text x="30" y="86.0" font-family="monospace" font-size="9" fill="#8b949e" text-anchor="end">Wed</text>
   <text x="30" y="114.0" font-family="monospace" font-size="9" fill="#8b949e" text-anchor="end">Fri</text>
@@ -1138,7 +1138,7 @@
   <text x="171" y="245" font-family="monospace" font-size="10" fill="#8b949e">More</text>
   <text x="35" y="270" font-family="monospace" font-size="11" fill="#c9d1d9" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.04s" fill="freeze"/>
-    ~14 contributions in the last year  ·  Best: 3 on 2026-07-10
+    ~17 contributions in the last year  ·  1-day streak  ·  Best: 3 on 2026-07-10
   </text>
   <text x="35" y="288" font-family="monospace" font-size="9" fill="#8b949e" opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.34s" fill="freeze"/>

@@ -18,7 +18,7 @@
 <h3><code>mahendarreddy08@github ~ $ ./status.sh</code></h3>
 
 ```
-📊 9,376+ contributions in the last year
+📊 17 contributions in the last year
 🔧 Full-Stack Developer | Python · JavaScript · React · Node.js · SQL
 🌱 Currently building cool stuff with Python & JS
 ⚡ Always learning, always coding
@@ -33,7 +33,7 @@
 
 | Repository | Description | Stars |
 |:-----------|:------------|:-----:|
-| [**mahendarreddy08**](https://github.com/mahendarreddy08/mahendarreddy08) | ⚡ My animated GitHub profile | ⭐ |
+| [**Animated-GitHub-Profile**](https://github.com/mahendarreddy08/Animated-GitHub-Profile) | ⚡ My animated GitHub profile | ⭐ |
 | _more repos coming soon..._ | | |
 
 </details>

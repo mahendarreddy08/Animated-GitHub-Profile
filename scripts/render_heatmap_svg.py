@@ -7,7 +7,7 @@ Reads data/contributions.json, writes contrib-heatmap.svg.
 import os
 import json
 import math
-from datetime import datetime, date, timedelta
+from datetime import datetime, timezone, date, timedelta
 
 # Constants
 SVG_W = 860
@@ -118,15 +118,16 @@ def generate_svg(data, output_path=OUTPUT_PATH):
     lines.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{SVG_W}" height="{SVG_H}" viewBox="0 0 {SVG_W} {SVG_H}">')
     lines.append(f'  <rect width="100%" height="100%" fill="{BG_COLOR}" rx="8"/>')
     
-    # Month labels
+    # Month labels - sort by week position to maintain correct order
     months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     month_positions = {}
     for c in grid:
         month = int(c["date"][5:7])
-        if month not in month_positions:
-            month_positions[month] = c["week"]
+        week = c["week"]
+        if month not in month_positions or week < month_positions[month]:
+            month_positions[month] = week
     
-    for month_num, week_idx in sorted(month_positions.items()):
+    for month_num, week_idx in sorted(month_positions.items(), key=lambda x: x[1]):
         x = LEFT_PAD + week_idx * cell_w
         lines.append(f'  <text x="{x}" y="{TOP_PAD - 5}" font-family="monospace" font-size="10" fill="{TEXT_COLOR}">'
                      f'{months[month_num - 1]}</text>')
@@ -186,7 +187,7 @@ def generate_svg(data, output_path=OUTPUT_PATH):
     lines.append(f'  </text>')
     
     # Updated timestamp
-    updated = stats.get("updated_at", datetime.utcnow().isoformat())[:10]
+    updated = stats.get("updated_at", datetime.now(timezone.utc).isoformat())[:10]
     lines.append(f'  <text x="{LEFT_PAD}" y="{stats_y + 18}" font-family="monospace" font-size="9" fill="{TEXT_COLOR}" opacity="0">')
     lines.append(f'    <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="{base_delay + total_cells * anim_delay_per_cell + 0.3:.2f}s" fill="freeze"/>')
     lines.append(f'    Last updated: {updated}')
