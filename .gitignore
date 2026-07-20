@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Source images (keep only the prepped version)
+source-photo.jpg
+source-photo.png
+
+# OS
+.DS_Store
+Thumbs.db
